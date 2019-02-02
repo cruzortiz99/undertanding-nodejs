@@ -26,7 +26,7 @@ Emitter2.prototype.constructor = Emitter2;
 var emitter = new Emitter({});
 var emiter2 = new Emitter2('hola');
 
-console.log(emiter2, emitter);
+console.log('es5inheritance ', emiter2, emitter);
 
 // Only 1 public class 
 module.exports = Emitter;

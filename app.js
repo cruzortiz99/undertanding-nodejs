@@ -1,6 +1,6 @@
 var Emitter = require('events');
 var events = require('./modules/eventsConfig').events;
-var CustomEmiter = require('./modules/emitter');
+var CustomEmiter = require('./modules/es5inheritance');
 var Person = require('./modules/es6classes')
 var emitter = new Emitter();
 
