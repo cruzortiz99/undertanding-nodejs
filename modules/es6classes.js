@@ -17,6 +17,6 @@ class Male extends Person {
 }
 
 module.exports = {
-  Person,
-  Male
+  Person: Person,
+  Male: Male
 }
