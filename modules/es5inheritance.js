@@ -25,7 +25,7 @@ Emitter2.prototype.constructor = Emitter2;
 // Instances
 var emitter = new Emitter({});
 var emiter2 = new Emitter2('hola');
-
+console.log('\n--New practice: Es5 classes and inheritace')
 console.log('es5inheritance ', emiter2, emitter);
 
 // Only 1 public class 

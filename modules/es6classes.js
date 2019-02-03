@@ -5,6 +5,7 @@ class Person {
     this.lastName = lastName;
   }
   greet() {
+    console.log('\n--New practice: Es5 classes and inheritace')
     console.log(`es6 class with name: ${this.name} , and lastName: ${this.lastName}`)
   };
 }
