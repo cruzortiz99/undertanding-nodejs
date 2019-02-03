@@ -1,13 +1,13 @@
 var Emitter = require('events');
-var { events } = require('./modules/eventsConfig');
-var CustomEmiter = require('./modules/es5inheritance');
-var { Male } = require('./modules/es6classes');
-var buffer = require('./modules/bufferTraining');
-var { view } = require('./modules/typedarrays')
-var greet = require('./modules/callbacks');
-var hi = require('./modules/files');
-var streamReadable = require('./modules/streams');
-var pipe = require('./modules/pipes')
+var { events } = require('./modules/classes/eventsConfig');
+var CustomEmiter = require('./modules/classes/es5inheritance');
+var { Male } = require('./modules/classes/es6classes');
+var buffer = require('./modules/buffer-stream-pipes/bufferTraining');
+var { view } = require('./modules/buffer-stream-pipes/typedarrays')
+var greet = require('./modules/callbacks/callbacks');
+var hi = require('./modules/buffer-stream-pipes/files');
+var streamReadable = require('./modules/buffer-stream-pipes/streams');
+var pipe = require('./modules/buffer-stream-pipes/pipes')
 var emitter = new Emitter();
 
 // EventEmitter practice
