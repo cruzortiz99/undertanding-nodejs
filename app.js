@@ -5,9 +5,9 @@ var { Male } = require('./modules/es6classes');
 var buffer = require('./modules/bufferTraining');
 var { view } = require('./modules/typedarrays')
 var greet = require('./modules/callbacks');
-var hi = require('./modules/files')
+var hi = require('./modules/files');
+var streamReadable = require('./modules/streams');
 var emitter = new Emitter();
-
 
 // EventEmitter practice
 emitter.on(events.GREETING, function () {

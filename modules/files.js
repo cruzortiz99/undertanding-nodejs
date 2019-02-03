@@ -8,6 +8,7 @@ var hi2 = fs.readFile(__dirname + '/greet.txt', 'utf8', function (err, data) {
   if (err) {
     console.log(err);
   } else {
+    console.log('\n--New practice: Reading file async');
     console.log('Async: ', data);
   }
 });
