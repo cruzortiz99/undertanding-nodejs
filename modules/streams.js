@@ -3,7 +3,7 @@ var fs = require('fs');
 var readable = fs.createReadStream(__dirname + '/stream.txt', {
   encoding: 'utf8',
   // Size of the buffer in bytes 
-  highWaterMark: 12 * 1024
+  highWaterMark: 64 * 1024
 });
 // To write a file
 var writable = fs.createWriteStream(__dirname + '/streamcopy.txt', {
@@ -16,5 +16,5 @@ readable.on('data', function (chunk) {
   // Copy the inside data of the file into an other file 
   writable.write(chunk, function (err) { console.log(err) });
 });
-
-module.exports = readable;
+var stream = { readable: readable, writable: writable };
+module.exports = stream;

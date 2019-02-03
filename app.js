@@ -7,6 +7,7 @@ var { view } = require('./modules/typedarrays')
 var greet = require('./modules/callbacks');
 var hi = require('./modules/files');
 var streamReadable = require('./modules/streams');
+var pipe = require('./modules/pipes')
 var emitter = new Emitter();
 
 // EventEmitter practice
