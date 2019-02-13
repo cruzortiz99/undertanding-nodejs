@@ -1,0 +1,26 @@
+{
+  "name": "understandingnodejs",
+  "version": "0.1.0",
+  "description": "Training in nodejs ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/cortiz99/first-nodejs-app.git"
+  },
+  "keywords": [
+    "training",
+    "nodejs"
+  ],
+  "author": "Cruz Ortiz",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://gitlab.com/cortiz99/first-nodejs-app/issues"
+  },
+  "homepage": "https://gitlab.com/cortiz99/first-nodejs-app#readme",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
