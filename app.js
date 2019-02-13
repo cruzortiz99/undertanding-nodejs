@@ -1,3 +1,3 @@
 var moment = require('moment')
 
-console.log(moment().format("YYYY-MMM-DD"))
+console.log(moment().format("YYYY-MM-DD"))
