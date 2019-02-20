@@ -5,6 +5,7 @@ var app = express();
 
 var port = process.env.PORT || 3000;
 var host = process.env.HOST || '127.0.0.1';
+console.log(`Running server in port: ${port} and address: ${host}`)
 
 // Use a Middleware (express.static) to deliver statis resourses
 app.use('/assets', express.static(path.join(__dirname, 'express')));
