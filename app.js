@@ -9,6 +9,10 @@ console.log(`Running server in port: ${port} and address: ${host}`)
 
 // Use a Middleware (express.static) to deliver statis resourses
 app.use('/assets', express.static(path.join(__dirname, 'express')));
+
+// Set the view finder engine of express to read .ejs files and to build them according with the engine template and require
+//--app.set('view engine', 'ejs')--//
+
 // Custom a Middleware 
 app.use('/', function (req, res, next) {
   console.log('Request Url: ' + req.url + ' Request method: ' + req.method);
@@ -24,7 +28,10 @@ app.get('/api', function (req, res) {
   res.json({
     name: 'Cruz',
     lastName: 'Ortiz',
-    age: 26
+    age: 26,
+    QryString: {
+      ...req.query
+    }
   });
 });
 // Stablishing a get method sending a RequestParam (via url)
